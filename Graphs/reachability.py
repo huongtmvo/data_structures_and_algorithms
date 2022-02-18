@@ -27,9 +27,4 @@ if __name__ == '__main__':
     visited = [False] * n 
     print(reach(adj, x, y))
 
-def reach(adj, visited, x, y):
-    visited[x] = True
-    for vertex in adj[x]:
-        if not visited[vertex]:
-            reach(adj, visited, vertex, y)
 
