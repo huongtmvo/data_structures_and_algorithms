@@ -1,9 +1,17 @@
 #Uses python3
 
+# Find if there is any cycles in the graph
 import sys
 
-WHITE, GREY, BLACK = 0, 1, 2
+'''
+For directed graphs, 
 
+WHITE: never visited, 
+GREY: visiting,
+BLACK: done visited
+'''
+
+WHITE, GREY, BLACK = 0, 1, 2
 def explore(adj, v):
     visited[v] = GREY
     for u in adj[v]:
