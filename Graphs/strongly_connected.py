@@ -1,5 +1,7 @@
 #Uses python3
 
+# Strongly connected components: the portion of a directed graph 
+# in which there is a path from each vertex to another vertex
 import sys
 
 sys.setrecursionlimit(200000)
